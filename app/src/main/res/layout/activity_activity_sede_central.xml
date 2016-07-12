@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.claudia.prueba.ActivitySede_central">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SedeCentral"
+        android:src="@mipmap/noticias"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true"
+        android:onClick="inf_sede_central" />
+
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="355dp"
+        android:id="@+id/mapa"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:layout_alignEnd="@+id/scrollView"
+        android:layout_alignBottom="@+id/scrollView"
+        android:background="@android:color/transparent"
+        android:text="Map"
+        android:onClick="most"
+        android:nestedScrollingEnabled="true" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Programas ofertados"
+        android:layout_above="@+id/mapa"
+        android:layout_below="@+id/mapa"
+        android:layout_alignTop="@+id/mapa"
+        android:theme="@android:style/Animation"
+        android:layout_marginTop="17dp"
+        android:gravity="center" />
+
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/text1"
+        android:id="@+id/sistemas"
+        android:text="Ingeniería de Sisremas"/>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/text1"
+        android:id="@+id/alimentos"
+        android:text="Ingeniería de Alimentos"/>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/text1"
+        android:id="@+id/diseño"
+        android:text="Diseño Visual"/>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/text1"
+        android:id="@+id/bioquimica"
+        android:text="Biología y química"/>
+
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/text1"
+        android:id="@+id/Biología"
+        android:text="Biología"/>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/text1"
+        android:id="@+id/desarrollo"
+        android:text="Desarrollo familiar"/>
+
+
+
+</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
